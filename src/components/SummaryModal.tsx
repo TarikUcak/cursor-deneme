@@ -134,7 +134,7 @@ export function SummaryModal({ data, onClose, onConfirm }: SummaryModalProps) {
         <div className="border-t border-[var(--border)] px-6 py-4 flex justify-between items-center print:hidden">
           <Button variant="secondary" onClick={onClose}>Geri Dön ve Düzenle</Button>
           <div className="flex gap-3">
-            <Button variant="outline" onClick={handlePrint} className="flex items-center gap-2">
+            <Button variant="ghost" onClick={handlePrint} className="flex items-center gap-2 border border-slate-200">
               <span className="text-lg">🖨️</span> Yazdır
             </Button>
             <Button onClick={onConfirm} className="bg-slate-900">Kaydı Tamamla & Stoktan Düş</Button>
